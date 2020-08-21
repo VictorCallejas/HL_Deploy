@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  middleware:
+    container_name: middleware
+    image: hyperloopupv:middleware
+    build: './receta' 
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    - "1337:1337/udp"
+    - "1338:1338/udp"
+    - "5556:5556/udp"
+    volumes:
+      - ./container-data/logs/data:/opt/mule/logs/data
+      - ./container-data/logs/spacex_data:/opt/mule/logs/spacex_data
+      - ./container-data/logs/alive:/opt/mule/logs/alive
+      - ./container-data/apps:/opt/mule/apps

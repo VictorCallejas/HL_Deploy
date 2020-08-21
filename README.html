@@ -1,0 +1,42 @@
+<h1 id="hyperloopupv">HyperloopUPV</h1>
+
+<hr />
+
+<p>Para poder visualizar la telemetría es necesario el <strong><em>middleware</em></strong> + <strong><em>interfaz</em></strong>
+Cualquier problema que tengaís para instalarlo preguntarme.</p>
+
+<hr />
+
+<h3 id="interfazgrficagui">Interfaz gráfica (GUI)</h3>
+
+<p>La GUI se está desarrollando constantemente, aquí tendreís la última version.</p>
+
+<ul>
+<li>Windows: <a href="https://s3.amazonaws.com/hyperloopupv/GUI/bundle-win.zip">https://s3.amazonaws.com/hyperloopupv/GUI/bundle-win.zip</a></li>
+
+<li>Mac: <a href="https://s3.amazonaws.com/hyperloopupv/GUI/bundle-mac.zip">https://s3.amazonaws.com/hyperloopupv/GUI/bundle-mac.zip</a></li>
+
+<li>Linux: <a href="https://s3.amazonaws.com/hyperloopupv/GUI/bundle-linux.zip">https://s3.amazonaws.com/hyperloopupv/GUI/bundle-linux.zip</a></li>
+</ul>
+
+<p>Nos podeís decir sugerencias, ideas, fallos...</p>
+
+<hr />
+
+<h3 id="middleware">Middleware</h3>
+
+<ol>
+<li><p>Instalar docker
+Link de descarga: <a href="https://hub.docker.com/search/?type=edition&amp;offering=community">https://hub.docker.com/search/?type=edition&amp;offering=community</a>
+En el caso de Windows, si no teneís la versión Professional o Enterprise 64-bit, os teneís que descargar <a href="https://docs.docker.com/toolbox/overview/">Docker Toolbox</a></p></li>
+
+<li><p>Construir imagen
+Abriros un shell y situados en la carpeta(donde se encuentra el archivo .yml), ejecutar:
+<code>docker-compose build</code></p></li>
+
+<li><p>Crear contenedor
+<code>docker-compose up</code>
+Para cerrarlo podeis escapar del terminal con <code>Ctrl + c</code> y después <code>docker-compose down</code></p></li>
+</ol>
+
+<p>El tercer paso es el único que teneís que hacer cada vez para ejecutar el middleware. El primer y segundo paso solo lo hareís una vez, para instalarlo todo.</p>
